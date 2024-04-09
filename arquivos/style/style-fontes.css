@@ -1,0 +1,21 @@
+.section-redes {
+    color: var(--cor-texto-1);
+    background: var(--cor-fundo-1);
+    min-height: 30vh;
+    padding: 80px var(--min-padding);
+    gap: 50px;
+}
+
+.icon-rede {
+    height: 60px;
+    opacity: 0.9;
+}
+
+.section-redes div {
+    gap: 50px;
+}
+
+.icon-rede:hover {
+    transform: scale(1.1);
+}
+

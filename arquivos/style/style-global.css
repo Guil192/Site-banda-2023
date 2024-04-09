@@ -1,0 +1,163 @@
+/* Configurações gerais */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Vina+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-1);
+}
+
+:root {
+    --cor-principal: #C41736;
+    --cor-btn: #b4112f;
+    --cor-texto-1: rgb(238, 225, 225);
+    --cor-fundo-1: #121212;
+    --min-padding: 100px;
+    --font-family-1: 'Bebas Neue', sans-serif;
+    --font-family-2: 'Roboto', sans-serif;
+    --font-family-3: 'Vina Sans', sans-serif;
+}
+
+p {
+    font-family: var(--font-family-2);
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.img-fundo {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.flex  {
+    display: flex;
+}
+
+.off {
+    display: none;
+}
+
+.centralizar {
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque {
+    color: var(--cor-principal);
+}
+
+.flex-coluna, section {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 16px;
+    background: var(--cor-principal);
+    color: var(--cor-texto-1);
+    border: none;
+    min-width: 150px;
+    border-radius: 200px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px black;
+    background: var(--cor-btn);
+}
+
+/* Header */
+
+.header-principal {
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-list {
+    gap: 20px
+}
+
+.nav-link:link, .nav-link:visited {
+    color: rgb(235, 235, 235);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: var(--cor-principal);
+}
+
+.cor-link:link, .cor-link:visited {
+    color: var(--cor-principal);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+.cor-link:hover, .cor-link:active {
+    color: var(--cor-btn)
+}
+
+/* footer */
+footer {
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30vh;
+    background: black;
+    gap: 30px;
+    padding: 100px var(--min-padding);
+}
+
+footer p {
+    color: white;
+}
+
+footer nav h3 {
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.redes-footer {
+    gap: 20px;
+}
+
+.icon-rede-f {
+    margin-top: 15px;
+    height: 30px;
+    opacity: 0.9;
+}
+
+.logo-footer {
+    width: 50%;
+}
+
+.direitos {
+    width: 600px;
+}

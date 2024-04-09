@@ -1,0 +1,11 @@
+section {
+    color: var(--cor-texto-1);
+    background: var(--cor-fundo-1);
+    min-height: 30vh;
+    gap: 20px;
+    padding: 80px var(--min-padding);
+}
+
+h2 {
+    margin-bottom: 30px;
+}

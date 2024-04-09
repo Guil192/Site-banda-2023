@@ -1,0 +1,26 @@
+section {
+    color: var(--cor-texto-1);
+    background: var(--cor-fundo-1);
+    min-height: 30vh;
+    padding: 80px var(--min-padding);
+}
+
+.galeria-wrapper {
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.card:hover {
+    max-width: 1000px;
+}
+
+section h2 {
+    color: var(--cor-principal);
+    margin-bottom: 30px;
+}

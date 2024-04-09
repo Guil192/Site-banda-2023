@@ -1,0 +1,205 @@
+/* Section principal */
+
+.section-principal {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-principal img {
+    z-index: -1;
+}
+
+.principal-conteudo {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.logo-principal {
+    width: 60%;
+}
+
+.btn-bonesy {
+    transition: all 0.2s ease-in;
+}
+
+.btn-bonesy:hover {
+    filter: invert();
+    transform: rotateZ(-10deg) scale(1.2);
+}
+
+/****** Section-integrantes *******/
+
+.section-integrantes {
+    color: var(--cor-texto-1);
+    background: var(--cor-fundo-1);
+    min-height: 50vh;
+    gap: 50px;
+    padding: 80px var(--min-padding);
+}
+
+.section-integrantes h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.card-integrante {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.cards-wrapper-integrantes {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/****** Papel ******/
+
+.section-papel {
+    height: 80vh;
+    position: relative;
+    background: radial-gradient(circle, rgba(0,0,0,0) 37%, rgba(0, 0, 0, 0.3) 89%, rgba(0,0,0,0.5) 100%);
+    overflow: hidden;
+}
+
+.section-papel img {
+    z-index: -1;
+}
+
+.section-papel div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section-papel div img {
+    position: absolute;
+    bottom: 0;
+    width: 1000px;
+    z-index: 3;
+}
+
+.gorillaz-papel {
+    opacity: 0.9;
+    margin-bottom: 200px;
+}
+
+/* discografia */
+
+.section-discografia {
+    color: var(--cor-texto-1);
+    background: var(--cor-fundo-1);
+    min-height: 50vh;
+    gap: 50px;
+    padding: 80px var(--min-padding);
+}
+
+.section-discografia h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.capa {
+    transform: translateX(-100px);
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background: rgb(35, 34, 34);
+    z-index: 3;
+}
+
+.capa img {
+    position: absolute;
+    transform: scale(0.9);
+}
+
+.disco-fora {
+    height: 400px;
+    width: 400px;
+    margin-left: 200px;
+    background: url(../img/texture-disco.png) center center no-repeat;
+    background-position: cover;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.disco-dentro {
+    width: 150px;
+    height: 150px;
+    background: url(../img/bonesy.png) center center no-repeat;
+    background-position: cover;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/******** Section história ***********/
+.section-historia {
+    color: var(--cor-texto-1);
+    background: #1e1e1e;
+    min-height: 70vh;
+    gap: 50px;
+    position: relative;
+    padding: 80px var(--min-padding);
+}
+
+.section-historia h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.historia-conteudo {
+    width: 700px;
+    height: auto;
+    gap: 20px
+}
+
+.historia-conteudo .btn {
+    margin-top: 20px;
+}
+
+.section-historia img {
+    position: absolute;
+    bottom: 0;
+    height: 800px;
+    right: 0;
+}
+
+.historia-wrapper {
+    gap: 20px
+}
+/****** Redes *****/
+.section-redes {
+    color: var(--cor-texto-1);
+    background: var(--cor-fundo-1);
+    height: 30vh;
+    padding: 80px var(--min-padding);
+}
+
+.icon-rede {
+    height: 60px;
+    opacity: 0.9;
+}
+
+.section-redes div {
+    gap: 50px;
+}
+
+.icon-rede:hover {
+    transform: scale(1.1);
+}
